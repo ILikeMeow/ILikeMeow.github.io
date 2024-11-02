@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cute Femboy Wiki</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
+    <link rel="icon" href="favico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favico.ico" type="image/x-icon">
+    <meta content="cute-femboy.wiki - The cutest femboy wiki" property="og:title" />
+    <meta content="Home page" property="og:description" />
+    <meta content="https://cute-femboy.wiki" property="og:url" />
+    <meta content="https://cute-femboy.wiki/icon.png" property="og:image" />
+    <meta content="#000000" data-react-helmet="true" name="theme-color"/> 
+</head>
+<body>
+    <nav class="navbar">
+        <h1>{{ name }}<sup>Home</sup></h1>
+        <a v-for="link in links" :href="link.url" :target="link.target">{{ link.text }}</a>
+    </nav>
+    <center>
+        <div class="main">
+            <h1>Welcome to the cute femboy wiki!</h1>
+            <h2>Indulge in over a thousand exclusive, irresistibly cute and naughty femboy pictures made just for our wiki. Dive in, you know you want to.</h2>
+            <h1>Buy premium <a href="/premium.html" target="_blank" class="premium">here</a> to gain access to content</h1>
+        </div>
+    </center>
+    <script>
+        Vue.createApp ({
+            data() {
+                return {
+                    name: 'Cute femboy wiki',
+                    links: [
+                        {text: 'Home', url: '/index.html', target: '_parent'},
+                        {text: 'About', url: '/about.html', target: '_parent'},
+                        {text: 'Videos', url: '/videos.html', target: '_parent'},
+                        {text: 'Premium', url: '/premium.html', target: '_blank'}
+                    ]
+                }
+            }
+        }).mount('.navbar');
+    </script>
+</body>
+</html>

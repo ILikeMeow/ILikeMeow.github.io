@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cute femboy videos</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
+    <link rel="icon" href="favico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favico.ico" type="image/x-icon">
+    <meta content="cute-femboy.wiki - The cutest femboy wiki" property="og:title" />
+    <meta content="Videos page" property="og:description" />
+    <meta content="https://cute-femboy.wiki" property="og:url" />
+    <meta content="https://cute-femboy.wiki/icon.png" property="og:image" />
+    <meta content="#000000" data-react-helmet="true" name="theme-color"/> 
+</head>
+<body>
+    <nav class="navbar">
+        <h1>{{ name }}<sup>Videos</sup></h1>
+        <a v-for="link in links" :href="link.url" :target="link.target">{{ link.text }}</a>
+    </nav>
+    <div class="video" v-for="videos in videos">
+        <p onclick="premiumcheck()" :title="videos.description">{{ videos.title }} 🔞 <span title="You need premium in order to access this content">👑</span></p>
+      
+    </div>
+    <center><h1>And we have much more! Join premium <a href="/premium.html" target="_blank" class="premium">here</a> to access it.</h1></center>
+    <script>
+        Vue.createApp ({
+            data() {
+                return {
+                    name: 'Cute femboy wiki',
+                    links: [
+                        {text: 'Home', url: '/index.html', target: '_parent'},
+                        {text: 'About', url: '/about.html', target: '_parent'},
+                        {text: 'Videos', url: '/videos.html', target: '_parent'},
+                        {text: 'Premium', url: '/premium.html', target: '_blank'}
+                    ],
+                    videos: [
+                        {title: "Flirty Femboy Fiasco", description: "Watch as our charming femboys engage in playful teasing and flirty antics that are sure to heat things up!"},
+                        {title: "Sensual Cuddle Sessions", description: "Join us for steamy cuddle parties where our cuties share intimate moments and cozy vibes."},
+                        {title: "Fabulous Flirtation Fashion Show", description: "Strut your stuff with the hottest looks as our femboys flaunt their sassy style and playful charisma!"},
+                        {title: "Naughty Snack Time", description: "Get ready for some cheeky snack-tasting moments with our femboys and their adorable reactions!"}, 
+                        {title: "Glam Up & Get Flirty", description: "Follow along as our fabulous femboys transform with stunning makeup tips and flirty vibes!"},
+                        {title: "Playful Femboy Fitness", description: "Join in on some light-hearted workouts filled with laughter, fun, and a hint of flirtation."},
+                        {title: "Kitten Cuddles & Flirtatious Felines", description: "Enjoy sweet moments as our femboys get cozy with adorable kittens and each other!"},
+                        {title: "Wiggle & Whisker Playtime", description: "Watch the cutest femboys engage in playful antics with their furry friends and each other."},
+                        {title: "Charming Naptime Rendezvous", description: "Join us for cozy nap sessions where femboys dream sweet dreams together."},
+                        {title: "Café Flirtations", description: "Sip on your favorite brew while enjoying cheeky conversations and playful banter."},
+                        {title: "Tasty Treat Taste Test", description: "Watch our femboys indulge in delightful desserts, sharing their reactions with flirty commentary!"},
+                        {title: "Purrfectly Playful & Flirty", description: "Join our femboys as they engage in playful antics that are sure to make you blush!"},
+                        {title: "Joyful Jumps & Bouncy Fun", description: "Get ready for some energetic jumping and frolicking that showcases pure joy and flirtation!"},
+                        {title: "Kawaii Crafty & Cute", description: "Craft along as we create adorable DIY projects with a flirty twist."},
+                        {title: "Femboy Frolics: A Playful Montage", description: "Enjoy a fun-filled montage of playful moments featuring our femboys!"}, 
+                        {title: "Dreamy Dance Duos", description: "Dance along with our femboys as they showcase their best moves in a flirty and fun setting."},
+                        {title: "Cheeky Charmers Unite", description: "Meet our cheekiest femboys as they charm their way through fun challenges with a flirty edge."},
+                        {title: "Sassy Playtime Adventures", description: "Enjoy light-hearted fun as our femboys showcase their sass during playful moments!"},
+                        {title: "Fluffy & Flirty Bedtime Stories", description: "Snuggle up as our femboys read delightful bedtime stories with a touch of flirtation."},
+                        {title: "Bubbly Bath Flirtations", description: "Dive into some bubbly fun as our femboys play with bath toys and engage in cheeky banter!"},
+                        {title: "Furry Friends Fiesta: A Flirty Bash", description: "Celebrate cuteness as our femboys throw a furry fiesta filled with flirty fun!"},
+                        {title: "Chill & Flirt", description: "Relax with our femboys as they share their favorite ways to unwind and flirt."},
+                        {title: "Quirky Questions & Flirty Answers", description: "Join in on a fun Q&A session where our femboys answer quirky questions with a flirty twist!"},
+                        {title: "Cozy Vibes & Flirtatious Moments", description: "Immerse yourself in cozy moments as our femboys create a warm and flirty atmosphere."},
+                        {title: "Posh Paws & Playful Flirts", description: "Embark on an adventurous day with our stylish femboys and their posh pets!"}, 
+                        {title: "Costume Parade: Flirty Edition", description: "Witness the most adorable costume parade featuring our femboys in playful outfits!"},
+                        {title: "Whimsical Flirts & Fun", description: "Enter a whimsical world where our femboys explore magical places filled with charm and flirtation."},
+                        {title: "Sassy Snuggles & Sweet Moments", description: "Experience snuggles like never before as our femboys bring their sass to cozy cuddling."},
+                        {title: "Charming Chit-Chat & Flirtation", description: "Enjoy delightful chit-chats as our femboys share stories with a flirty twist."},
+                        {title: "Fluff & Flirt", description: "Discover fluffy moments in life with our adorable femboys and their playful charm!"},
+                        {title: "Squee-Worthy Flirty Moments", description: "Get ready for major cuteness overload with our flirty femboy clips!"},
+                        {title: "Giggly Games with a Twist", description: "Join our femboys in a series of giggly games that guarantee fun and flirty interactions."},
+                        {title: "Magical Flirty Moments", description: "Dive into magical moments filled with wonder as our femboys share their adventures."},
+                        {title: "Cozy Campfire Flirtations", description: "Gather around for heartwarming campfire stories told by our charming femboys with flirty flair!"},
+                        {title: "Whiskers on the Loose & Flirty Fun", description: "Join the fun as our femboys chase after their mischievous furry friends with playful banter!"},
+                        {title: "Fabulous Fur-tography: A Flirty Shoot", description: "Enjoy a fun photo shoot with our femboys and their furry pals, capturing flirty moments."},
+                        {title: "Silly Sock Adventures: Flirty Edition", description: "Watch our femboys embark on a fun-filled journey in their silliest socks with cheeky commentary!"},
+                        {title: "Charming Culinary Flirtations", description: "Cook along with our femboys as they whip up deliciously charming recipes with a flirty twist!"},
+                        {title: "Paw-some Pranks & Flirty Fun", description: "Get ready for laughs as our femboys pull off the cutest pranks on each other with cheeky surprises!"},
+                        {title: "Grooming Glamour: Flirty Style", description: "Join our femboys for a glamorous grooming session filled with fun tips and flirty tricks!"},
+                        {title: "Cuddly Cuties Unite: Flirt Edition", description: "Experience heartwarming moments as our femboys unite for cuddly fun and flirty antics!"},
+                        {title: "Mischievous Mews & Flirty Fun", description: "Follow our femboys as they encounter playful kitties in their daily flirty adventures."},
+                        {title: "Whiskers & Wonders: Flirty Fun", description: "Explore the wonders of life with our femboys and their adorable whiskered friends with a flirty twist!"},
+                        {title: "Adventurous Afternoon Flirtations", description: "Join our femboys for an adventurous afternoon filled with exploration and flirty fun!"},
+                        {title: "Sweet Dreams & Flirty Snuggles", description: "Wind down with heartwarming moments that guarantee sweet dreams and cozy, flirty snuggles."},
+                        {title: "Paw-sitive Energy & Flirty Vibes", description: "Embrace the positivity as our femboys spread joy and flirty happiness!"},
+                        {title: "Dance Like Nobody's Watching: Flirty Edition", description: "Get inspired by our femboys as they dance freely and joyfully with flirty flair!"},
+                        {title: "Curious Kitten Chronicles & Flirty Fun", description: "Follow the curious adventures of kittens alongside our playful femboys and their flirtations!"},
+                        {title: "Chill & Thrill: Flirty Fun", description: "Experience the perfect balance of chill vibes and thrilling, flirty fun with our femboys!"},
+                        {title: "Furry Funhouse: A Flirty Adventure", description: "Step into the furry funhouse, where every corner is filled with laughter, joy, and flirty charm!"}
+                    ]
+                }
+            }
+        }).mount('body');
+        function premiumcheck() {
+            alert("Error! You don't have premium! Join premium to access it and much more!");
+            window.open('/premium.html')
+        }
+    </script>
+</body>
+</html>

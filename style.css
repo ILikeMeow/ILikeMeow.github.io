@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.navbar {
+    text-align: center;
+    border-bottom: 1px solid rgb(8, 11, 31);
+    background-image: linear-gradient(to right, rgb(2, 2, 8), black);
+    padding: 3px;
+    border-radius: 5px;
+    transition-duration: 0.4;
+    color: white;
+}
+
+.navbar a {
+    transition-duration: 0.4s;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+}
+
+.navbar a:hover {
+    color: white;
+    font-size: 103%;
+    letter-spacing: 1px;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(3, 4, 12), black);
+    color: rgb(255, 255, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.gradient {
+    background-image: linear-gradient(to right, blue, red);
+    background-clip: unset;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+sup {
+    font-family: poppins;
+    background-image: linear-gradient(to right,rgb(234, 0, 255), rgb(0, 38, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.premium {
+    text-decoration: none;
+    background-image: linear-gradient(to right,rgb(132, 0, 255), rgb(0, 217, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.main {
+    position: relative;
+    top: 100px;
+}
+
+.video {
+    border: 3px solid grey;
+    border-radius: 5px;
+    background-color: black;
+    padding: 25px;
+}
+
+.description {
+    filter: opacity(0);
+    transition-duration: 0.4s;
+}
+
+.description:hover {
+    filter: opacity(10);
+}
