@@ -19,8 +19,8 @@
         <h1>{{ name }}<sup>Videos</sup></h1>
         <a v-for="link in links" :href="link.url" :target="link.target">{{ link.text }}</a>
     </nav>
-    <div class="video" v-for="videos in videos" :title="videos.description">
-        <p onclick="premiumcheck()">{{ videos.title }} 🔞 <span title="You need premium in order to access this content">👑</span></p>
+    <div class="video" v-for="videos in videos" :title="videos.description" onclick="premiumcheck()">
+        <p>{{ videos.title }} 🔞 <span title="You need premium in order to access this content">👑</span></p>
       
     </div>
     <center><h1>And we have much more! Join premium <a href="/premium.html" target="_blank" class="premium">here</a> to access it.</h1></center>
